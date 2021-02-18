@@ -1,0 +1,126 @@
+---
+# Developed by ConstructStudios
+# Factions configuration file
+
+# ################## PLUGIN SETTINGS ################
+# Version, recommended to not change
+version: "2.0.2"
+
+
+# ################# MISC SETTINGS ##################
+# Cache clearing settings
+# Unload chunks when no player is loading them
+unload-chunk: true
+
+# Clear non-living object entities when no player is nearby for 10 seconds
+object-clear: true
+
+
+# ################# PLAYER SETTINGS #################
+# Player score tag format
+# Special tags: {name} {display_name} {ping} {health} {deviceOS} {faction_name} {faction_rank}
+scoretag-format: "&bPing: {ping} &r&c{health}❤ &r&bDevice: &7{deviceOS}"
+
+# Player first time join message
+first-time-join:
+- "&7Welcome to ConstructStudios: Factions, {player}!"
+- "&7Everyone, it's their first time! Give them a warm welcome!"
+
+# Re-spawn time after death
+respawn-time: 15
+
+
+# ################# FACTION SETTINGS ################
+# Faction creation price
+faction-create-price: 1000
+
+# Faction max guardians
+faction-max-guardians: 5
+
+# Faction guardian spawn cost
+faction-guardian-spawn-cost: 500000
+
+# Faction max member count
+max-members: 9
+
+# Activity points gained per second
+activity-point-gain: 0.05
+
+# Activity points gained per kill
+activity-point-gain-kill: 100
+
+# Activity points gained per block mined
+activity-point-gain-mine: 0.5
+
+# Activity points gained per block placed
+activity-point-gain-build: 0.5
+
+# Faction STR gain amount per (auto-str-time)
+str-gain-auto: 20
+
+# Faction auto STR gaining time (seconds)
+auto-str-time: 600
+
+# Faction STR gain per kill
+str-gain-kill: 10
+
+# Faction STR lose per death
+str-lose-death: 10
+
+# Faction max DTR
+dtr-max: 20
+
+# Faction claim str cost
+claim-land-cost: 250
+
+# Faction claim enabled worlds
+faction-claim-enable:
+- "faction"
+
+# Faction wild range
+faction-wild-range: 5000
+
+# Allow blocks to be broken even on claims
+# These blocks can be broken even under claim protection
+claim-ignore-block-break:
+- "monster_spawner:0"
+
+# Allow blocks to be touched even on claims
+# These blocks can be touched even under claim protection
+claim-ignore-block-touch:
+- "chest:-1"
+- "ender_chest:-1"
+- "hopper:-1"
+
+# Block values for claims
+claim-income-values:
+  default: 1
+  "hay_bale:0": 4
+  "diamond_block:0": 20
+  "gold_block:0": 5
+  "emerald_block:0": 30
+  "iron_block:0": 2
+  "coal_block:0": 2
+
+# Monster Spawner values for claims
+monster-spawner-values:
+  default: 100
+
+
+# ################### MONSTER SPAWNER SETTINGS ################
+# Monster spawner max stack
+spawner-max-stack: 25
+
+# Monster spawner min spawn delay ticks
+spawner-min-spawn-delay: 120
+
+# Monster spawner max spawn delay ticks
+spawner-max-spawn-delay: 600
+
+
+# ################## WORLD SETTINGS ###########################
+# World border size, this must be positive and odd
+world-border:
+  faction: 5000
+
+...

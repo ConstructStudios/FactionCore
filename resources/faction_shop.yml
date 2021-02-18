@@ -1,0 +1,38 @@
+---
+# Developed by ConstructStudios
+# Faction Shop configuration file
+
+- display: "&bGEN BUCKET: &7Obsidian"
+  customName: NULL
+  enchants: NULL
+  lore: []
+  item: "bucket:8"
+  grant-item: true
+  commands: []
+  cost: 1000
+  nbt: '{GenBlockType:"obsidian", ench:[]}'
+
+- display: "&a&lBANK NOTE: &r$10,000"
+  customName: NULL
+  enchants: NULL
+  lore: []
+  item: "paper:0"
+  grant-item: false
+  commands:
+  - givemoney {player} 10000
+  cost: 1000
+  nbt: NULL
+
+- display: "&l&2Creeper Egg"
+  customName: NULL
+  enchants: NULL
+  lore:
+  - "&7Tap to spawn Creeper"
+  - "&7Creeper can be activated by punching"
+  item: "spawn_egg:33"
+  grant-item: true
+  commands: []
+  cost: 2500
+  nbt: NULL
+
+...
