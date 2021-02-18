@@ -1,4 +1,3 @@
-# Factions
 ## FactionCore
 A modified plugin, better than ever like EVER!. Being updated frequently. Managed by ConstructStudios Team. We've updates this plugin , features, bug fixes, and more. If you have any issues, or suggestions on what we should fix / add to this plugin, please open a new issue. We will make sure to read them. Thank you.
 
